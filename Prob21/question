@@ -1,0 +1,46 @@
+Migratory Birds
+
+Given an array of integers where each element represents a bird type id, determine the id of the most frequently sighted bird type.
+
+If more than one bird type has the same highest frequency, return the smallest bird type id among them.
+
+Example
+arr = [1, 1, 2, 2, 3]
+
+Bird sightings:
+
+Type 1 → 2 times
+Type 2 → 2 times
+Type 3 → 1 time
+
+Both type 1 and type 2 appear the most (2 times).
+Return the smaller id, which is:
+
+1
+Function Description
+
+Complete the function:
+
+migratoryBirds(List<Integer> arr)
+Parameter
+
+arr[n] : a list of integers representing the bird type ids sighted
+
+Returns
+
+int : the lowest bird type id of the most frequently sighted birds.
+
+Input Format
+
+The first line contains an integer n, the size of the array.
+
+The second line contains n space-separated integers, each representing a bird type id.
+
+Constraints
+5 ≤ n ≤ 2 × 10^5
+Each bird type id is one of: 1, 2, 3, 4, or 5
+Sample Input
+6
+1 4 4 4 5 3
+Sample Output
+4

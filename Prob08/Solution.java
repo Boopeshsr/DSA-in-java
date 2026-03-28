@@ -33,7 +33,7 @@ class Result {
         }
     }
 
-    long minSum = totalSum - max; // exclude largest
+    long minSum = totalSum - max; 
     long maxSum = totalSum - min; // exclude smallest
 
     System.out.println(minSum + " " + maxSum);

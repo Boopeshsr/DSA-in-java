@@ -1,0 +1,63 @@
+Bill Division (Bon Appétit)
+
+Two friends Anna and Brian are deciding how to split the bill at a dinner. Each person should only pay for the items they actually consumed.
+
+Brian receives the bill and calculates Anna’s share. However, Anna did not eat one of the items, so Brian should not include that item when splitting the bill.
+
+Your task is to determine whether Brian charged Anna correctly.
+
+Example
+
+Suppose the bill is:
+
+bill = [2, 4, 6]
+
+Anna did not eat the item at index k = 2 (which costs 6).
+
+The correct bill Anna should pay:
+
+(2 + 4) / 2 = 3
+
+If Brian incorrectly includes the item she didn’t eat:
+
+(2 + 4 + 6) / 2 = 6
+
+In this case, Brian overcharged Anna by 3, so he should refund 3.
+
+Function Description
+
+Complete the function:
+
+bonAppetit(List<Integer> bill, int k, int b)
+Parameters
+
+bill – an array of integers representing the cost of each item ordered
+
+k – the 0-based index of the item that Anna did not eat
+
+b – the amount of money Brian charged Anna
+
+Input Format
+
+The first line contains two integers n and k
+
+n → number of items ordered
+
+k → index of the item Anna didn’t eat
+
+The second line contains n space-separated integers describing the cost of each item.
+
+The third line contains integer b, the amount Brian charged Anna.
+
+Constraints
+2 ≤ n ≤ 10^5
+0 ≤ k < n
+0 ≤ bill[i] ≤ 10^4
+0 ≤ b ≤ sum of bill
+Output Format
+
+If Brian charged Anna correctly, print:
+
+Bon Appetit
+
+Otherwise, print the amount Brian must refund to Anna.

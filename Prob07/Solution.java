@@ -14,11 +14,6 @@ import static java.util.stream.Collectors.toList;
 
 class Result {
 
-    /*
-     * Complete the 'staircase' function below.
-     *
-     * The function accepts INTEGER n as parameter.
-     */
 
     public static void staircase(int n) {
     // Outer loop for each row (from 1 to n)

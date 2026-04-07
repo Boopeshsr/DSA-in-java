@@ -19,12 +19,12 @@ class Result {
     // Outer loop for each row (from 1 to n)
         for (int i = 1; i <= n; i++) {
             
-            // Inner loop 1: Print (n - i) spaces for right-alignment
+            
             for (int j = 0; j < n - i; j++) {
                 System.out.print(" ");
             }
             
-            // Inner loop 2: Print i '#' symbols
+            
             for (int k = 0; k < i; k++) {
                 System.out.print("#");
             }
